@@ -1,8 +1,22 @@
-import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s"
-)
+from datetime import datetime
 
-logger = logging.getLogger("Qualc-Dataset")
+
+class Logger:
+
+    @staticmethod
+    def info(message):
+
+        print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] [INFO] {message}")
+
+
+    @staticmethod
+    def warning(message):
+
+        print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] [WARNING] {message}")
+
+
+    @staticmethod
+    def error(message):
+
+        print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] [ERROR] {message}")

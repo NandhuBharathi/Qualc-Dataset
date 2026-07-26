@@ -5,3 +5,7 @@ __pycache__/
 downloads/
 output/
 dataset.parquet
+
+# Generated datasets
+*.parquet
+output/
